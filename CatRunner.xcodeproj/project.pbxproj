@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DC4D6E7D38084939CAB9629 /* Pods_CatRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */; };
 		F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA4218449F90015CFAF /* AppDelegate.swift */; };
 		F383BCA7218449F90015CFAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA6218449F90015CFAF /* ViewController.swift */; };
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB83DF0899D903C6892704B /* Pods-CatRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.release.xcconfig"; sourceTree = "<group>"; };
+		EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		F383BCA1218449F90015CFAF /* CatRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F383BCA4218449F90015CFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F383BCA6218449F90015CFAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC4D6E7D38084939CAB9629 /* Pods_CatRunner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96CFA8563E9A93D7931FEA8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */,
+				9EB83DF0899D903C6892704B /* Pods-CatRunner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		990B54AFE392A25C6BA55909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F383BC98218449F90015CFAF = {
 			isa = PBXGroup;
 			children = (
 				F383BCA3218449F90015CFAF /* CatRunner */,
 				F383BCA2218449F90015CFAF /* Products */,
+				96CFA8563E9A93D7931FEA8A /* Pods */,
+				990B54AFE392A25C6BA55909 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F383BCB3218449FA0015CFAF /* Build configuration list for PBXNativeTarget "CatRunner" */;
 			buildPhases = (
+				47AFE2D5A8ED15CF630BDF53 /* [CP] Check Pods Manifest.lock */,
 				F383BC9D218449F90015CFAF /* Sources */,
 				F383BC9E218449F90015CFAF /* Frameworks */,
 				F383BC9F218449F90015CFAF /* Resources */,
+				A2A13A58AA4CBAA30B4F4FA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47AFE2D5A8ED15CF630BDF53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatRunner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A13A58AA4CBAA30B4F4FA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F383BC9D218449F90015CFAF /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		F383BCB4218449FA0015CFAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		F383BCB5218449FA0015CFAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB83DF0899D903C6892704B /* Pods-CatRunner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
