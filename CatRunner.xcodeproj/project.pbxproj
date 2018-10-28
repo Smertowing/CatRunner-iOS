@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3DC4D6E7D38084939CAB9629 /* Pods_CatRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */; };
 		F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA4218449F90015CFAF /* AppDelegate.swift */; };
-		F383BCA7218449F90015CFAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA6218449F90015CFAF /* ViewController.swift */; };
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
 		F383BCAF218449FA0015CFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */; };
 		F3FBC2EE2186531500F24EAB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2ED2186531500F24EAB /* StartViewController.swift */; };
 		F3FBC2F02186533F00F24EAB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2EF2186533F00F24EAB /* History.swift */; };
+		F3FBC2F32186560900F24EAB /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,6 @@
 		EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		F383BCA1218449F90015CFAF /* CatRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F383BCA4218449F90015CFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F383BCA6218449F90015CFAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F383BCA9218449F90015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F383BCAB218449FA0015CFAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F383BCAE218449FA0015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F3FBC2ED2186531500F24EAB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F3FBC2EF2186533F00F24EAB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				F383BCA4218449F90015CFAF /* AppDelegate.swift */,
-				F383BCA6218449F90015CFAF /* ViewController.swift */,
-				F383BCA8218449F90015CFAF /* Main.storyboard */,
+				F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */,
 				F3FBC2F12186534300F24EAB /* Model */,
 				F3FBC2E42186520500F24EAB /* ViewControllers */,
 				F383BCAB218449FA0015CFAF /* Assets.xcassets */,
+				F383BCA8218449F90015CFAF /* Main.storyboard */,
 				F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */,
 				F383BCB0218449FA0015CFAF /* Info.plist */,
 			);
@@ -241,11 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F383BCA7218449F90015CFAF /* ViewController.swift in Sources */,
 				F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */,
 				F3FBC2F02186533F00F24EAB /* History.swift in Sources */,
 				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
 				F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */,
+				F3FBC2F32186560900F24EAB /* HistoryViewCell.swift in Sources */,
 				F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */,
 				F3FBC2EE2186531500F24EAB /* StartViewController.swift in Sources */,
 			);
