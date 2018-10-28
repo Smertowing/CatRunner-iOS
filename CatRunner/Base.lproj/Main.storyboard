@@ -109,14 +109,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LuT-by-GrQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Profile" id="nHZ-5b-Wyy"/>
+                    <tabBarItem key="tabBarItem" title="" image="Profile" id="nHZ-5b-Wyy">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4y-0X-Ge7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2871.1999999999998" y="412.44377811094455"/>
         </scene>
-        <!--View Controller-->
+        <!-- -->
         <scene sceneID="Ihh-2L-jf8">
             <objects>
                 <viewController id="kEH-bu-Uze" sceneMemberID="viewController">
@@ -184,7 +186,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8pT-pO-rnM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="History" id="let-Fb-teg"/>
+                    <tabBarItem key="tabBarItem" title=" " image="History" id="let-Fb-teg">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZK-VD-gNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,7 +253,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7Jj-PU-Try"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="Home" id="6Bw-Ec-Zpn"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home" id="6Bw-Ec-Zpn">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6D-cY-ERy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -358,8 +364,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="deffault" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpj-KW-5ar">
-                                                    <rect key="frame" x="300" y="24" width="59" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpj-KW-5ar">
+                                                    <rect key="frame" x="305" y="24" width="54" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -400,7 +406,9 @@
                             <outlet property="delegate" destination="fWg-r7-tKE" id="hId-sH-YWy"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" image="Settings" id="DWo-OR-H2G"/>
+                    <tabBarItem key="tabBarItem" title="" image="Settings" id="DWo-OR-H2G">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEe-7E-HcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -466,7 +474,9 @@
                             <outlet property="delegate" destination="4Ss-4O-k8Y" id="uYJ-1p-ixI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" image="Info" id="dn8-gQ-ZMi"/>
+                    <tabBarItem key="tabBarItem" title="" image="Info" id="dn8-gQ-ZMi">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJM-i7-teF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -475,11 +485,11 @@
     </scenes>
     <resources>
         <image name="Button!" width="720" height="720"/>
-        <image name="History" width="48" height="48"/>
+        <image name="History" width="37.5" height="37.5"/>
         <image name="Home" width="37.5" height="37.5"/>
-        <image name="Info" width="60" height="60"/>
-        <image name="Profile" width="48" height="48"/>
-        <image name="Settings" width="48" height="48"/>
+        <image name="Info" width="37.5" height="37.5"/>
+        <image name="Profile" width="37.5" height="37.5"/>
+        <image name="Settings" width="37.5" height="37.5"/>
         <image name="User" width="225" height="225"/>
     </resources>
 </document>
