@@ -13,6 +13,11 @@
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
 		F383BCAF218449FA0015CFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */; };
+		F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E22186520000F24EAB /* SettingsViewController.swift */; };
+		F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */; };
+		F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */; };
+		F3FBC2EE2186531500F24EAB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2ED2186531500F24EAB /* StartViewController.swift */; };
+		F3FBC2F02186533F00F24EAB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2EF2186533F00F24EAB /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		F383BCAB218449FA0015CFAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F383BCAE218449FA0015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F383BCB0218449FA0015CFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FBC2E22186520000F24EAB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F3FBC2ED2186531500F24EAB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		F3FBC2EF2186533F00F24EAB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +91,32 @@
 				F383BCA4218449F90015CFAF /* AppDelegate.swift */,
 				F383BCA6218449F90015CFAF /* ViewController.swift */,
 				F383BCA8218449F90015CFAF /* Main.storyboard */,
+				F3FBC2F12186534300F24EAB /* Model */,
+				F3FBC2E42186520500F24EAB /* ViewControllers */,
 				F383BCAB218449FA0015CFAF /* Assets.xcassets */,
 				F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */,
 				F383BCB0218449FA0015CFAF /* Info.plist */,
 			);
 			path = CatRunner;
+			sourceTree = "<group>";
+		};
+		F3FBC2E42186520500F24EAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
+				F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */,
+				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
+				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F3FBC2F12186534300F24EAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBC2EF2186533F00F24EAB /* History.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +243,11 @@
 			files = (
 				F383BCA7218449F90015CFAF /* ViewController.swift in Sources */,
 				F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */,
+				F3FBC2F02186533F00F24EAB /* History.swift in Sources */,
+				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
+				F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */,
+				F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */,
+				F3FBC2EE2186531500F24EAB /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
