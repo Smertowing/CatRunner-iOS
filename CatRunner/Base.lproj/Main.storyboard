@@ -258,9 +258,29 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6D-cY-ERy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="ZIN-HZ-Bnk"/>
+                <tapGestureRecognizer id="ZIN-HZ-Bnk">
+                    <connections>
+                        <segue destination="MLe-WO-1AF" kind="presentation" id="3kc-YL-I0S"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1378" y="1134"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Qc9-hw-8Uj">
+            <objects>
+                <viewController id="MLe-WO-1AF" customClass="MapViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="weJ-tp-DO5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P55-I6-j16"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aE8-3W-D9p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLr-NK-kcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1378" y="1805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="CwU-jU-pzn">
