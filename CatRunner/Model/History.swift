@@ -18,7 +18,7 @@ class HistoryItem {
     var time: Int
     
     init(km: Double, time: Int) {
-        self.image = #imageLiteral(resourceName: "History")
+        self.image = #imageLiteral(resourceName: "MapDefault")
         self.kilometers = km
         self.miles = km*oneKMtoMI
         self.time = time

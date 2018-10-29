@@ -268,10 +268,10 @@
             </objects>
             <point key="canvasLocation" x="-1378" y="413"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="WuO-3B-jNT">
             <objects>
-                <tableViewController id="fWg-r7-tKE" sceneMemberID="viewController">
+                <tableViewController id="fWg-r7-tKE" customClass="SettingsViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bth-wk-jyB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,6 +307,9 @@
                                                         <segment title="km"/>
                                                         <segment title="mi"/>
                                                     </segments>
+                                                    <connections>
+                                                        <action selector="unitDidChanged:forEvent:" destination="fWg-r7-tKE" eventType="valueChanged" id="ka2-gb-g5t"/>
+                                                    </connections>
                                                 </segmentedControl>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -328,6 +331,9 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S5R-Eo-REU">
                                                     <rect key="frame" x="312" y="19" width="49" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="soundsDidChanged:forEvent:" destination="fWg-r7-tKE" eventType="valueChanged" id="3pd-o8-lJg"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -415,12 +421,19 @@
                     <tabBarItem key="tabBarItem" title="" image="Settings" id="DWo-OR-H2G">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="languageLabel" destination="yfu-Wn-af5" id="IHF-vt-vjQ"/>
+                        <outlet property="mapLabel" destination="972-HR-IPe" id="1s2-1W-T0n"/>
+                        <outlet property="soundsSwitch" destination="S5R-Eo-REU" id="Lih-dU-4oa"/>
+                        <outlet property="themeLabel" destination="gpj-KW-5ar" id="H78-WS-mXf"/>
+                        <outlet property="unitSegments" destination="CwO-Ro-YBp" id="xWQ-fX-zDn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEe-7E-HcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-567.20000000000005" y="411.544227886057"/>
         </scene>
-        <!--Table View Controller-->
+        <!-- -->
         <scene sceneID="g0B-bc-pIZ">
             <objects>
                 <tableViewController id="4Ss-4O-k8Y" sceneMemberID="viewController">
@@ -480,7 +493,7 @@
                             <outlet property="delegate" destination="4Ss-4O-k8Y" id="uYJ-1p-ixI"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="Info" id="dn8-gQ-ZMi">
+                    <tabBarItem key="tabBarItem" title=" " image="Info" id="dn8-gQ-ZMi">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                 </tableViewController>

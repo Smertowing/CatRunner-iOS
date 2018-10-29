@@ -8,17 +8,18 @@
 
 import Foundation
 
-enum UnitTypes {
-    case km
-    case mi
+enum UnitTypes: Int {
+    case km = 0
+    case mi = 1
 }
 
 class UserSettings {
-    static var unit: UnitTypes = UnitTypes.km{
+    static var unit: UnitTypes = UnitTypes.km {
         didSet {
             
         }
     }
-    static var sounds: Bool = true
+    static var sounds: Bool = false
+    
     private init() {}
 }
