@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3DC4D6E7D38084939CAB9629 /* Pods_CatRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */; };
+		F329D04C2186EE8A00657555 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329D04B2186EE8A00657555 /* Settings.swift */; };
 		F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA4218449F90015CFAF /* AppDelegate.swift */; };
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatRunner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB83DF0899D903C6892704B /* Pods-CatRunner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.release.xcconfig"; sourceTree = "<group>"; };
 		EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.debug.xcconfig"; sourceTree = "<group>"; };
+		F329D04B2186EE8A00657555 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F383BCA1218449F90015CFAF /* CatRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F383BCA4218449F90015CFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F383BCA9218449F90015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				F383BCA4218449F90015CFAF /* AppDelegate.swift */,
-				F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */,
 				F3FBC2F12186534300F24EAB /* Model */,
 				F3FBC2E42186520500F24EAB /* ViewControllers */,
 				F383BCAB218449FA0015CFAF /* Assets.xcassets */,
@@ -106,6 +107,7 @@
 				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */,
 				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
+				F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */,
 				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F3FBC2EF2186533F00F24EAB /* History.swift */,
+				F329D04B2186EE8A00657555 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */,
 				F3FBC2F02186533F00F24EAB /* History.swift in Sources */,
+				F329D04C2186EE8A00657555 /* Settings.swift in Sources */,
 				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
 				F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */,
 				F3FBC2F32186560900F24EAB /* HistoryViewCell.swift in Sources */,
