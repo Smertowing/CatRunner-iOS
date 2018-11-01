@@ -10,6 +10,7 @@
 		3DC4D6E7D38084939CAB9629 /* Pods_CatRunner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660A83640F02F2C4A3F51446 /* Pods_CatRunner.framework */; };
 		F3136A572187AD3300FC7183 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3136A562187AD3300FC7183 /* MapViewController.swift */; };
 		F329D04C2186EE8A00657555 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F329D04B2186EE8A00657555 /* Settings.swift */; };
+		F32C4749218B2D2E00A4B781 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C4748218B2D2E00A4B781 /* MainTabBarViewController.swift */; };
 		F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383BCA4218449F90015CFAF /* AppDelegate.swift */; };
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		EE2B9F7BC724C6D1EEF21C14 /* Pods-CatRunner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatRunner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatRunner/Pods-CatRunner.debug.xcconfig"; sourceTree = "<group>"; };
 		F3136A562187AD3300FC7183 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F329D04B2186EE8A00657555 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F32C4748218B2D2E00A4B781 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		F383BCA1218449F90015CFAF /* CatRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F383BCA4218449F90015CFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F383BCA9218449F90015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F32C474A218B2F3300A4B781 /* View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */,
+			);
+			path = "View Cells";
+			sourceTree = "<group>";
+		};
 		F383BC98218449F90015CFAF = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +104,8 @@
 			children = (
 				F383BCA4218449F90015CFAF /* AppDelegate.swift */,
 				F3FBC2F12186534300F24EAB /* Model */,
-				F3FBC2E42186520500F24EAB /* ViewControllers */,
+				F32C474A218B2F3300A4B781 /* View Cells */,
+				F3FBC2E42186520500F24EAB /* View Controllers */,
 				F383BCAB218449FA0015CFAF /* Assets.xcassets */,
 				F383BCA8218449F90015CFAF /* Main.storyboard */,
 				F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */,
@@ -103,17 +114,17 @@
 			path = CatRunner;
 			sourceTree = "<group>";
 		};
-		F3FBC2E42186520500F24EAB /* ViewControllers */ = {
+		F3FBC2E42186520500F24EAB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F32C4748218B2D2E00A4B781 /* MainTabBarViewController.swift */,
 				F3136A562187AD3300FC7183 /* MapViewController.swift */,
 				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */,
 				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
-				F3FBC2F22186560900F24EAB /* HistoryViewCell.swift */,
 				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		F3FBC2F12186534300F24EAB /* Model */ = {
@@ -252,6 +263,7 @@
 				F329D04C2186EE8A00657555 /* Settings.swift in Sources */,
 				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
 				F3136A572187AD3300FC7183 /* MapViewController.swift in Sources */,
+				F32C4749218B2D2E00A4B781 /* MainTabBarViewController.swift in Sources */,
 				F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */,
 				F3FBC2F32186560900F24EAB /* HistoryViewCell.swift in Sources */,
 				F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */,
