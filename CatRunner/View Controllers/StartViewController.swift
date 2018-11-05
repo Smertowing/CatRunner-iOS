@@ -10,12 +10,18 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    
+    @IBOutlet weak var goButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        goButton.titleLabel?.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func goButtonDidClicked(_ sender: Any) {
+        
+    }
 
     /*
     // MARK: - Navigation

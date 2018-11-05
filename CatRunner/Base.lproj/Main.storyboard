@@ -199,17 +199,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button!" translatesAutoresizingMaskIntoConstraints="NO" id="hfN-dr-xDd">
-                                <rect key="frame" x="116.33333333333331" y="158" width="180" height="180"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="3Ax-bq-VoK"/>
-                                    <constraint firstAttribute="width" constant="180" id="zCv-gB-23l"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="ZIN-HZ-Bnk" appends="YES" id="pK9-BO-PWu"/>
-                                </connections>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faP-cp-iYG">
                                 <rect key="frame" x="60" y="588" width="94" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -234,27 +223,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uy-7b-n4l">
-                                <rect key="frame" x="131" y="228" width="152" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLV-Od-cH7">
+                                <rect key="frame" x="107" y="158" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Lx7-mw-kHV"/>
+                                    <constraint firstAttribute="width" constant="200" id="gsh-44-oxK"/>
+                                    <constraint firstAttribute="width" secondItem="XLV-Od-cH7" secondAttribute="height" multiplier="1:1" id="lpQ-KB-q7y"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Button!">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="GO">
+                                            <attributes>
+                                                <font key="NSFont" size="48" name="AndaleMono"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonDidClicked:" destination="7up-Wz-Skc" eventType="touchUpInside" id="QmG-2h-h7F"/>
+                                    <segue destination="MLe-WO-1AF" kind="show" id="e0e-lc-1Ji"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="7Jj-PU-Try" firstAttribute="trailing" secondItem="XLV-Od-cH7" secondAttribute="trailing" constant="107" id="HNT-tD-9nS"/>
                             <constraint firstItem="7Jj-PU-Try" firstAttribute="trailing" secondItem="H1l-y9-iAg" secondAttribute="trailing" constant="60" id="HSg-1F-isB"/>
+                            <constraint firstItem="XLV-Od-cH7" firstAttribute="top" secondItem="7Jj-PU-Try" secondAttribute="top" constant="70" id="HZ6-sO-wh7"/>
                             <constraint firstItem="cjh-Jq-4bX" firstAttribute="top" secondItem="H1l-y9-iAg" secondAttribute="bottom" constant="30" id="Neg-Qb-CLH"/>
-                            <constraint firstItem="6uy-7b-n4l" firstAttribute="leading" secondItem="7Jj-PU-Try" secondAttribute="leading" constant="131" id="Nsa-Ig-dh5"/>
                             <constraint firstItem="7Jj-PU-Try" firstAttribute="bottom" secondItem="cjh-Jq-4bX" secondAttribute="bottom" constant="70" id="OFK-Yb-tyF"/>
                             <constraint firstItem="hs2-Um-aXF" firstAttribute="leading" secondItem="7Jj-PU-Try" secondAttribute="leading" constant="45" id="PvP-Vy-hDS"/>
-                            <constraint firstItem="7Jj-PU-Try" firstAttribute="trailing" secondItem="hfN-dr-xDd" secondAttribute="trailing" constant="117.8" id="Qcp-qU-kJ5"/>
-                            <constraint firstItem="6uy-7b-n4l" firstAttribute="top" secondItem="7Jj-PU-Try" secondAttribute="top" constant="140" id="SW4-Cf-cL1"/>
                             <constraint firstItem="7Jj-PU-Try" firstAttribute="trailing" secondItem="cjh-Jq-4bX" secondAttribute="trailing" constant="45" id="Vb9-bT-9PX"/>
-                            <constraint firstItem="7Jj-PU-Try" firstAttribute="trailing" secondItem="6uy-7b-n4l" secondAttribute="trailing" constant="131" id="iGE-7I-Xh6"/>
                             <constraint firstItem="hs2-Um-aXF" firstAttribute="top" secondItem="faP-cp-iYG" secondAttribute="bottom" constant="30" id="oW8-f0-pCX"/>
-                            <constraint firstItem="hfN-dr-xDd" firstAttribute="top" secondItem="7Jj-PU-Try" secondAttribute="top" constant="70" id="rSV-Ur-KtR"/>
-                            <constraint firstItem="hfN-dr-xDd" firstAttribute="leading" secondItem="7Jj-PU-Try" secondAttribute="leading" constant="116.2" id="uXO-hM-QRm"/>
+                            <constraint firstItem="XLV-Od-cH7" firstAttribute="leading" secondItem="7Jj-PU-Try" secondAttribute="leading" constant="107" id="t39-bi-W2l"/>
                             <constraint firstItem="7Jj-PU-Try" firstAttribute="bottom" secondItem="hs2-Um-aXF" secondAttribute="bottom" constant="70" id="uht-lM-5G4"/>
                             <constraint firstItem="faP-cp-iYG" firstAttribute="leading" secondItem="7Jj-PU-Try" secondAttribute="leading" constant="60" id="xhb-mS-WzV"/>
                         </constraints>
@@ -262,6 +264,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="CatRunner" id="7Tn-Dm-QoZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="goButton" destination="XLV-Od-cH7" id="Cvz-p2-oAI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6D-cY-ERy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ZIN-HZ-Bnk">
@@ -776,4 +781,7 @@
         <image name="Settings" width="56.25" height="56.25"/>
         <image name="User" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="e0e-lc-1Ji"/>
+    </inferredMetricsTieBreakers>
 </document>
