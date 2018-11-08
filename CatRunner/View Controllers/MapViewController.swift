@@ -19,10 +19,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         super.viewDidLoad()
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
-        mapView.animate(to: GMSCameraPosition.camera(withLatitude: (self.locationManager.location?.coordinate.latitude)!, longitude:(self.locationManager.location?.coordinate.longitude)!, zoom:14))
         self.locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
+        mapView.animate(to: GMSCameraPosition.camera(withLatitude: (self.locationManager.location?.coordinate.latitude ?? 0), longitude:(self.locationManager.location?.coordinate.longitude ?? 0), zoom:14))
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -33,7 +33,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, GMSMapView
         mapView.animate(to: camera)
         
         self.locationManager.stopUpdatingLocation()
-        
     }
 
 }
