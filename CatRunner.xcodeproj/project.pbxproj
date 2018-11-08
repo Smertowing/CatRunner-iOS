@@ -15,6 +15,7 @@
 		F383BCAA218449F90015CFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCA8218449F90015CFAF /* Main.storyboard */; };
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
 		F383BCAF218449FA0015CFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */; };
+		F3871430219494D7002BC360 /* ProfileStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387142F219494D7002BC360 /* ProfileStructs.swift */; };
 		F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E22186520000F24EAB /* SettingsViewController.swift */; };
 		F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */; };
 		F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */; };
@@ -36,6 +37,7 @@
 		F383BCAB218449FA0015CFAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F383BCAE218449FA0015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F383BCB0218449FA0015CFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F387142F219494D7002BC360 /* ProfileStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStructs.swift; sourceTree = "<group>"; };
 		F3FBC2E22186520000F24EAB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			path = CatRunner;
 			sourceTree = "<group>";
 		};
+		F3871431219494DA002BC360 /* ApiStructures */ = {
+			isa = PBXGroup;
+			children = (
+				F387142F219494D7002BC360 /* ProfileStructs.swift */,
+			);
+			path = ApiStructures;
+			sourceTree = "<group>";
+		};
 		F3FBC2E42186520500F24EAB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		F3FBC2F12186534300F24EAB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3871431219494DA002BC360 /* ApiStructures */,
 				F3FBC2EF2186533F00F24EAB /* History.swift */,
 				F329D04B2186EE8A00657555 /* Settings.swift */,
 			);
@@ -261,6 +272,7 @@
 				F383BCA5218449F90015CFAF /* AppDelegate.swift in Sources */,
 				F3FBC2F02186533F00F24EAB /* History.swift in Sources */,
 				F329D04C2186EE8A00657555 /* Settings.swift in Sources */,
+				F3871430219494D7002BC360 /* ProfileStructs.swift in Sources */,
 				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
 				F3136A572187AD3300FC7183 /* MapViewController.swift in Sources */,
 				F32C4749218B2D2E00A4B781 /* MainTabBarViewController.swift in Sources */,
