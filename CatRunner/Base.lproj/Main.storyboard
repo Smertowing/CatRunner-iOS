@@ -24,7 +24,7 @@
                                 </state>
                                 <connections>
                                     <action selector="helpOption:" destination="2eP-WY-yX5" eventType="touchUpInside" id="ab1-UN-cgS"/>
-                                    <segue destination="k2l-Ni-Bs6" kind="show" id="MZw-4p-2Wf"/>
+                                    <segue destination="k2l-Ni-Bs6" kind="presentation" id="6XI-nF-QU6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-Jw-53D">
@@ -35,7 +35,7 @@
                                 <state key="normal" title="CREATE ACCOUNT" backgroundImage="LS_ButtonBack"/>
                                 <connections>
                                     <action selector="createAccount:" destination="2eP-WY-yX5" eventType="touchUpInside" id="hMt-cQ-y0a"/>
-                                    <segue destination="6Kq-Pm-wz3" kind="show" id="AxD-mA-aZS"/>
+                                    <segue destination="Mse-yL-PDj" kind="presentation" id="yR4-Up-ZoD"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LS_Line" translatesAutoresizingMaskIntoConstraints="NO" id="qje-jj-iWk">
@@ -124,27 +124,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zf2-c7-e8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1380" y="-1209"/>
+            <point key="canvasLocation" x="-1378" y="-1166"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7ip-l4-bYO">
+        <!--Create Account View Controller-->
+        <scene sceneID="rDS-Hr-E9z">
             <objects>
-                <viewController id="6Kq-Pm-wz3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kL8-kH-2qq">
+                <viewController storyboardIdentifier="CreateVC" id="Mse-yL-PDj" customClass="CreateAccountViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9mA-YC-DwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LbC-Zm-TWO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="xuU-Ye-nxd">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="i1L-HC-MiA">
+                                            <connections>
+                                                <segue destination="2eP-WY-yX5" kind="presentation" id="pmD-bh-cyA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kX1-GS-HQs"/>
+                        <viewLayoutGuide key="safeArea" id="m5h-qf-PSv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nnz-Pf-7zY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wKI-so-Khg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc9-na-yds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2159" y="-437"/>
+            <point key="canvasLocation" x="-2161" y="-437"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="fZl-Ba-Pzz">
             <objects>
-                <tabBarController id="J6g-jn-kzh" customClass="MainTabBarViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainVC" id="J6g-jn-kzh" customClass="MainTabBarViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6xk-Gu-8oE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -930,13 +946,28 @@
             </objects>
             <point key="canvasLocation" x="-2978.4000000000001" y="1133.8830584707648"/>
         </scene>
-        <!--View Controller-->
+        <!--Restoration View Controller-->
         <scene sceneID="oIZ-UE-ORA">
             <objects>
-                <viewController id="k2l-Ni-Bs6" sceneMemberID="viewController">
+                <viewController id="k2l-Ni-Bs6" customClass="RestorationViewController" customModule="CatRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPj-h7-7qw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lK6-HI-6y3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="kcv-Zp-GGf">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QSB-79-nzd">
+                                            <connections>
+                                                <segue destination="2eP-WY-yX5" kind="presentation" id="Gpz-if-5yc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7RT-M4-1CL"/>
                     </view>
@@ -962,4 +993,7 @@
         <image name="Profile" width="56.25" height="56.25"/>
         <image name="Settings" width="56.25" height="56.25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gpz-if-5yc"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -22,9 +22,12 @@ class LoginScreenViewController: UIViewController {
     
     
     @IBAction func tryLogIn(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainTabBarViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     @IBAction func createAccount(_ sender: Any) {
+    
     }
     
     @IBAction func helpOption(_ sender: Any) {
