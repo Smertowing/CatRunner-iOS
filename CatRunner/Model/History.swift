@@ -26,7 +26,7 @@ class HistoryItem {
     
     init(image: UIImage, km: Double, time: Int) {
         self.image = image
-        self.kilometers = km
+        self.kilometers = km    
         self.miles = km*oneKMtoMI
         self.time = time
     }
