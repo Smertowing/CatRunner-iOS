@@ -16,5 +16,18 @@ class LoginScreenViewController: UIViewController {
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
     }
-
+    
+    @IBOutlet weak var loginField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    
+    @IBAction func tryLogIn(_ sender: Any) {
+    }
+    
+    @IBAction func createAccount(_ sender: Any) {
+    }
+    
+    @IBAction func helpOption(_ sender: Any) {
+    }
+    
 }

@@ -22,6 +22,10 @@
                                 <state key="normal" title="Ooops, i forgot my password">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="helpOption:" destination="2eP-WY-yX5" eventType="touchUpInside" id="ab1-UN-cgS"/>
+                                    <segue destination="k2l-Ni-Bs6" kind="show" id="MZw-4p-2Wf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-Jw-53D">
                                 <rect key="frame" x="49" y="670" width="314" height="47"/>
@@ -30,7 +34,8 @@
                                 </constraints>
                                 <state key="normal" title="CREATE ACCOUNT" backgroundImage="LS_ButtonBack"/>
                                 <connections>
-                                    <segue destination="J6g-jn-kzh" kind="presentation" id="ct2-xn-Job"/>
+                                    <action selector="createAccount:" destination="2eP-WY-yX5" eventType="touchUpInside" id="hMt-cQ-y0a"/>
+                                    <segue destination="6Kq-Pm-wz3" kind="show" id="AxD-mA-aZS"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LS_Line" translatesAutoresizingMaskIntoConstraints="NO" id="qje-jj-iWk">
@@ -43,7 +48,7 @@
                                 </constraints>
                                 <state key="normal" title="LOGIN" backgroundImage="LS_ButtonBack"/>
                                 <connections>
-                                    <segue destination="J6g-jn-kzh" kind="presentation" id="Xky-1W-COu"/>
+                                    <action selector="tryLogIn:" destination="2eP-WY-yX5" eventType="touchUpInside" id="qgD-Ks-SIG"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LS_Hello" translatesAutoresizingMaskIntoConstraints="NO" id="fsT-qJ-eya">
@@ -112,10 +117,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="coe-nR-CJW"/>
                     </view>
+                    <connections>
+                        <outlet property="loginField" destination="kRy-uG-VfX" id="Bg9-ke-4aB"/>
+                        <outlet property="passwordField" destination="58j-wj-DxI" id="Bqt-8v-p51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zf2-c7-e8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2400" y="-437.27678571428572"/>
+            <point key="canvasLocation" x="-1380" y="-1209"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7ip-l4-bYO">
+            <objects>
+                <viewController id="6Kq-Pm-wz3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kL8-kH-2qq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kX1-GS-HQs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKI-so-Khg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2159" y="-437"/>
         </scene>
         <!--Main Tab Bar View Controller-->
         <scene sceneID="fZl-Ba-Pzz">
@@ -906,6 +930,21 @@
             </objects>
             <point key="canvasLocation" x="-2978.4000000000001" y="1133.8830584707648"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="oIZ-UE-ORA">
+            <objects>
+                <viewController id="k2l-Ni-Bs6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPj-h7-7qw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7RT-M4-1CL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHX-Cd-qfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-437"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Button!" width="720" height="720"/>
@@ -923,7 +962,4 @@
         <image name="Profile" width="56.25" height="56.25"/>
         <image name="Settings" width="56.25" height="56.25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Xky-1W-COu"/>
-    </inferredMetricsTieBreakers>
 </document>

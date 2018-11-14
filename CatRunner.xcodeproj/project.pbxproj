@@ -16,6 +16,8 @@
 		F383BCAC218449FA0015CFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAB218449FA0015CFAF /* Assets.xcassets */; };
 		F383BCAF218449FA0015CFAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */; };
 		F3871430219494D7002BC360 /* ProfileStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F387142F219494D7002BC360 /* ProfileStructs.swift */; };
+		F3BEB343219CB10800716F56 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEB342219CB10800716F56 /* CreateAccountViewController.swift */; };
+		F3BEB345219CB13D00716F56 /* RestorationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEB344219CB13D00716F56 /* RestorationViewController.swift */; };
 		F3E82D4E219C13FF00790780 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E82D4D219C13FF00790780 /* LoginScreenViewController.swift */; };
 		F3FBC2E32186520000F24EAB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E22186520000F24EAB /* SettingsViewController.swift */; };
 		F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */; };
@@ -39,6 +41,8 @@
 		F383BCAE218449FA0015CFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F383BCB0218449FA0015CFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F387142F219494D7002BC360 /* ProfileStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStructs.swift; sourceTree = "<group>"; };
+		F3BEB342219CB10800716F56 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F3BEB344219CB13D00716F56 /* RestorationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorationViewController.swift; sourceTree = "<group>"; };
 		F3E82D4D219C13FF00790780 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		F3FBC2E22186520000F24EAB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -126,16 +130,34 @@
 			path = ApiStructures;
 			sourceTree = "<group>";
 		};
-		F3FBC2E42186520500F24EAB /* View Controllers */ = {
+		F3BEB340219CB07E00716F56 /* MenuVC */ = {
 			isa = PBXGroup;
 			children = (
 				F32C4748218B2D2E00A4B781 /* MainTabBarViewController.swift */,
-				F3136A562187AD3300FC7183 /* MapViewController.swift */,
-				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */,
 				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
+				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
+			);
+			path = MenuVC;
+			sourceTree = "<group>";
+		};
+		F3BEB341219CB0C000716F56 /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
 				F3E82D4D219C13FF00790780 /* LoginScreenViewController.swift */,
+				F3BEB342219CB10800716F56 /* CreateAccountViewController.swift */,
+				F3BEB344219CB13D00716F56 /* RestorationViewController.swift */,
+			);
+			path = StartVC;
+			sourceTree = "<group>";
+		};
+		F3FBC2E42186520500F24EAB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3136A562187AD3300FC7183 /* MapViewController.swift */,
+				F3BEB340219CB07E00716F56 /* MenuVC */,
+				F3BEB341219CB0C000716F56 /* StartVC */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -277,6 +299,7 @@
 				F3E82D4E219C13FF00790780 /* LoginScreenViewController.swift in Sources */,
 				F329D04C2186EE8A00657555 /* Settings.swift in Sources */,
 				F3871430219494D7002BC360 /* ProfileStructs.swift in Sources */,
+				F3BEB343219CB10800716F56 /* CreateAccountViewController.swift in Sources */,
 				F3FBC2EC218652F200F24EAB /* ProfileViewController.swift in Sources */,
 				F3136A572187AD3300FC7183 /* MapViewController.swift in Sources */,
 				F32C4749218B2D2E00A4B781 /* MainTabBarViewController.swift in Sources */,
@@ -284,6 +307,7 @@
 				F3FBC2F32186560900F24EAB /* HistoryViewCell.swift in Sources */,
 				F3FBC2EA218652C800F24EAB /* HistoryViewController.swift in Sources */,
 				F3FBC2EE2186531500F24EAB /* StartViewController.swift in Sources */,
+				F3BEB345219CB13D00716F56 /* RestorationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
