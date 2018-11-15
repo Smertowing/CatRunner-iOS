@@ -113,7 +113,6 @@
 				F383BCA4218449F90015CFAF /* AppDelegate.swift */,
 				F3FBC2F12186534300F24EAB /* Model */,
 				F3FBC2E42186520500F24EAB /* View Controllers */,
-				F32C474A218B2F3300A4B781 /* View Cells */,
 				F383BCAB218449FA0015CFAF /* Assets.xcassets */,
 				F383BCA8218449F90015CFAF /* Main.storyboard */,
 				F383BCAD218449FA0015CFAF /* LaunchScreen.storyboard */,
@@ -138,6 +137,7 @@
 				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
 				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
+				F32C474A218B2F3300A4B781 /* View Cells */,
 			);
 			path = MenuVC;
 			sourceTree = "<group>";

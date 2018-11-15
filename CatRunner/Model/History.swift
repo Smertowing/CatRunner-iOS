@@ -15,16 +15,16 @@ class HistoryItem {
     var image: UIImage
     var kilometers: Double
     var miles: Double
-    var time: Int
+    var time: Double
     
-    init(km: Double, time: Int) {
+    init(km: Double, time: Double) {
         self.image = #imageLiteral(resourceName: "MapDefault")
         self.kilometers = km
         self.miles = km*oneKMtoMI
         self.time = time
     }
     
-    init(image: UIImage, km: Double, time: Int) {
+    init(image: UIImage, km: Double, time: Double) {
         self.image = image
         self.kilometers = km    
         self.miles = km*oneKMtoMI
@@ -34,6 +34,6 @@ class HistoryItem {
 
 class UserHistory: NSObject {
     
-    static var items: [HistoryItem] = [HistoryItem(km: 4.2, time: 666), HistoryItem(km: 5.2, time: 10), HistoryItem(km: 5.2, time: 10)]
+    static var items: [HistoryItem] = []
 
 }
