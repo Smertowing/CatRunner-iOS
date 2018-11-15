@@ -24,7 +24,7 @@ class HistoryViewCell: UITableViewCell {
             distanceUnit.text = "mi"
             distance.text = String(format:"%0.2f", historyItem?.miles ?? 0)
         }
-        self.time.text = String(format:"%0.2f", Double(historyItem!.time) / 60 )
+        self.time.text = String(format:"%0.2f", historyItem!.time / 60 )
     }
     
     var historyItem: HistoryItem? {
