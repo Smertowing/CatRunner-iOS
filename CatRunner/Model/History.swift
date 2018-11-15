@@ -34,6 +34,6 @@ class HistoryItem {
 
 class UserHistory: NSObject {
     
-    static var items: [HistoryItem] = []
+    static var items: [HistoryItem] = [HistoryItem(km: 0, time: 0)]
 
 }
