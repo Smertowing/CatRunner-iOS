@@ -408,6 +408,7 @@
                                     <outlet property="distanceUnit" destination="kSO-vj-Lcz" id="kyX-Zg-g9J"/>
                                     <outlet property="historyImage" destination="QEt-s5-XaS" id="4yB-78-5Y2"/>
                                     <outlet property="time" destination="HHx-zx-40f" id="7Ti-4G-HmT"/>
+                                    <segue destination="5sl-aS-C2d" kind="show" id="mXb-95-hAN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -508,6 +509,49 @@
                 <tapGestureRecognizer id="ZIN-HZ-Bnk"/>
             </objects>
             <point key="canvasLocation" x="-1378.2608695652175" y="1817.7455357142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yaf-V6-VYh">
+            <objects>
+                <viewController id="5sl-aS-C2d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3Z-2M-8wE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HA_Map" translatesAutoresizingMaskIntoConstraints="NO" id="sId-SW-LUU">
+                                <rect key="frame" x="0.0" y="531" width="414" height="296"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="296" id="Lp8-UX-avO"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HA_Header" translatesAutoresizingMaskIntoConstraints="NO" id="hJG-kd-zDW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="476"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVs-7G-8kx">
+                                <rect key="frame" x="46" y="137" width="322" height="333"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hJG-kd-zDW" firstAttribute="centerX" secondItem="sVs-7G-8kx" secondAttribute="centerX" id="1TL-PJ-is0"/>
+                            <constraint firstItem="hJG-kd-zDW" firstAttribute="top" secondItem="leo-Rp-HYY" secondAttribute="top" id="2IY-lV-fI0"/>
+                            <constraint firstItem="leo-Rp-HYY" firstAttribute="bottom" secondItem="hJG-kd-zDW" secondAttribute="bottom" constant="229" id="6pr-Tp-hGP"/>
+                            <constraint firstItem="sVs-7G-8kx" firstAttribute="leading" secondItem="leo-Rp-HYY" secondAttribute="leading" constant="46" id="B8i-YT-5Hv"/>
+                            <constraint firstItem="sVs-7G-8kx" firstAttribute="top" secondItem="leo-Rp-HYY" secondAttribute="top" constant="49" id="Q1s-FL-gYb"/>
+                            <constraint firstItem="hJG-kd-zDW" firstAttribute="leading" secondItem="T3Z-2M-8wE" secondAttribute="leading" id="XDP-mO-wco"/>
+                            <constraint firstItem="hJG-kd-zDW" firstAttribute="leading" secondItem="sId-SW-LUU" secondAttribute="leading" id="YNK-Xh-Vb1"/>
+                            <constraint firstItem="sId-SW-LUU" firstAttribute="top" secondItem="sVs-7G-8kx" secondAttribute="bottom" constant="61" id="bVN-YH-8fd"/>
+                            <constraint firstItem="hJG-kd-zDW" firstAttribute="trailing" secondItem="sId-SW-LUU" secondAttribute="trailing" id="bae-Lb-guo"/>
+                            <constraint firstAttribute="trailing" secondItem="hJG-kd-zDW" secondAttribute="trailing" id="hs7-aj-5wO"/>
+                            <constraint firstAttribute="bottom" secondItem="sId-SW-LUU" secondAttribute="bottom" id="rpe-9g-wKk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="leo-Rp-HYY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB5-7G-TAl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2159.4202898550725" y="2491.40625"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Qc9-hw-8Uj">
@@ -1076,6 +1120,8 @@
         <image name="Button!" width="720" height="720"/>
         <image name="ButtonBack" width="692" height="110"/>
         <image name="CA_Lable" width="535" height="208"/>
+        <image name="HA_Header" width="1079" height="1171"/>
+        <image name="HA_Map" width="2058" height="990"/>
         <image name="History" width="56.25" height="56.25"/>
         <image name="Home" width="56.25" height="56.25"/>
         <image name="Info" width="56.25" height="56.25"/>

@@ -132,12 +132,12 @@
 		F3BEB340219CB07E00716F56 /* MenuVC */ = {
 			isa = PBXGroup;
 			children = (
+				F32C474A218B2F3300A4B781 /* View Cells */,
 				F32C4748218B2D2E00A4B781 /* MainTabBarViewController.swift */,
 				F3FBC2EB218652F200F24EAB /* ProfileViewController.swift */,
 				F3FBC2E9218652C800F24EAB /* HistoryViewController.swift */,
 				F3FBC2ED2186531500F24EAB /* StartViewController.swift */,
 				F3FBC2E22186520000F24EAB /* SettingsViewController.swift */,
-				F32C474A218B2F3300A4B781 /* View Cells */,
 			);
 			path = MenuVC;
 			sourceTree = "<group>";
